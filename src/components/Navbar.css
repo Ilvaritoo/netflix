@@ -1,0 +1,25 @@
+.nav{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 2;
+    transition: 0.2s;
+}
+.nav__black{
+    background-color: black;
+}
+
+.nav > img{
+    height: 100%;
+}
+.logo{
+    margin-right: 20px;
+    font-size: 40px;
+    color: #fff;
+    display: grid;
+    place-items: center;
+}
+

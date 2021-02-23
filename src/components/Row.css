@@ -1,5 +1,6 @@
 .row{
     margin-left: 20px;
+    color: #fff;
 }
 .row__posters{
     display: flex;
@@ -32,3 +33,5 @@
 .row__posterLarge:hover{
     transform: translate(1.2);
 }
+
+

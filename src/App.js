@@ -1,12 +1,25 @@
 import Row from "./components/Row";
 import requests from '../src/request'
+import Baner from "./components/Baner";
 
 
 function App() {
   return (
     <div className="App">
-      <Row title='Netflix originals' fetchUrl/>
-      <Row title='Trending now' fetchUrl/>
+      {/* navbar */}
+      {/* baner */}
+      <Baner />
+      <Row title='Netflix originals' 
+      isLargeRow
+      fetchUrl={requests.fetchNetflixOriginals} />
+      <Row title='Trending now' fetchUrl={requests.fetchTrending} />
+      <Row title='Top Rated' fetchUrl={requests.fetchTopRated} />
+      <Row title='Action Movies' fetchUrl={requests.fetchActionMovies} />
+      <Row title='Comedy Movies' fetchUrl={requests.fetchComedyMovies} />
+      <Row title='Horror Movies' fetchUrl={requests.fetchHorrorMovies} />
+      <Row title='Romance Movies' fetchUrl={requests.fetchRomanceMovies} />
+      <Row title='Documentaries' fetchUrl={requests.fetchDocumentaries} />
+
     </div>
   );
 }
